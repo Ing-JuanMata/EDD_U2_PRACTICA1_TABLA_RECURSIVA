@@ -82,7 +82,6 @@ public class Programa extends javax.swing.JFrame {
 
     private void btnTablaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTablaActionPerformed
         Tabla t = new Tabla();
-        t.reiniciarTabla();
         int n = Integer.parseInt(txtN.getText());
         this.setTitle("Tabla del " + n);
 

@@ -16,7 +16,7 @@ public class Tabla {
     public Tabla() {
     }
 
-    public void reiniciarTabla() {
+    private void reiniciarTabla() {
         sum = 0;
         i = 0;
     }
@@ -26,6 +26,10 @@ public class Tabla {
         i++;
         sum += n;
 
-        return (i == 10) ? r : r + Tabla(n);
+        if (i == 10) {
+            reiniciarTabla();
+            return r;
+        }
+        return r + Tabla(n);
     }
 }
